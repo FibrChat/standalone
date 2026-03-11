@@ -40,6 +40,8 @@ func main() {
 		log.Fatalf("Failed to start worker: %v", err)
 	}
 
+	fmt.Printf("Server is running on ws://%s:%d\n", domain, port)
+
 	sig := make(chan os.Signal, 1)
 	signal.Notify(sig, syscall.SIGINT, syscall.SIGTERM)
 	<-sig
