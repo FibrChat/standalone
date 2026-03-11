@@ -1,6 +1,8 @@
 package main
 
 import (
+	"crypto/rand"
+	"encoding/base64"
 	"fmt"
 	"log"
 	"os"
@@ -15,10 +17,10 @@ import (
 func main() {
 	port := envInt("PORT", 4222)
 	domain := envOr("DOMAIN", "localhost")
-	workerPassword := envOr("WORKER_PASSWORD", "simplechat-worker")
-	remotePassword := envOr("REMOTE_PASSWORD", "simplechat-remote")
+	remotePassword := envOr("REMOTE_PASSWORD", "remote")
+	workerPassword := randomPassword()
 
-	ns, err := server.Start(server.Options{
+	srv, err := server.Start(server.Options{
 		Domain:         domain,
 		Port:           port,
 		WorkerPassword: workerPassword,
@@ -28,14 +30,11 @@ func main() {
 		log.Fatalf("Failed to start server: %v", err)
 	}
 
-	// Use in-process later...
-	serverURL := fmt.Sprintf("nats://127.0.0.1:%d", port+1)
-
 	wrk, err := worker.Start(worker.Options{
-		Domain:         domain,
-		ServerURL:      serverURL,
-		WorkerPassword: workerPassword,
-		RemotePassword: remotePassword,
+		Domain:          domain,
+		WorkerPassword:  workerPassword,
+		RemotePassword:  remotePassword,
+		InProcessServer: srv,
 	})
 	if err != nil {
 		log.Fatalf("Failed to start worker: %v", err)
@@ -47,7 +46,7 @@ func main() {
 	fmt.Println("\nShutting down...")
 
 	wrk.Shutdown()
-	ns.Stop()
+	srv.Stop()
 }
 
 func envOr(key, def string) string {
@@ -67,4 +66,13 @@ func envInt(key string, def int) int {
 		log.Fatalf("invalid value for %s: %v", key, err)
 	}
 	return n
+}
+
+func randomPassword() string {
+	b := make([]byte, 256)
+	if _, err := rand.Read(b); err != nil {
+		log.Fatalf("failed to generate random password: %v", err)
+	}
+
+	return base64.RawURLEncoding.EncodeToString(b)
 }

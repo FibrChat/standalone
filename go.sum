@@ -1,13 +1,9 @@
 github.com/antithesishq/antithesis-sdk-go v0.6.0 h1:v/YViLhFYkZOEEof4AXjD5AgGnGM84YHF4RqEwp6I2g=
 github.com/antithesishq/antithesis-sdk-go v0.6.0/go.mod h1:IUpT2DPAKh6i/YhSbt6Gl3v2yvUZjmKncl7U91fup7E=
-github.com/fibrchat/server v0.0.0-20260311075846-87f457f12bcb h1:q3BKU+wpHTUwJe79MPn7CTHnVpeK8mJAj4hUsUj8FiE=
-github.com/fibrchat/server v0.0.0-20260311075846-87f457f12bcb/go.mod h1:qvgD1BxJy4V7CKvudO8WbBktRBe5aXuzdaqz02DGRjQ=
-github.com/fibrchat/worker v0.0.0-20260311081108-4f5f75d74cce h1:qx350kxfokHl49DRAJp/tZxLm5wJLsX76XrxOO5qDlY=
-github.com/fibrchat/worker v0.0.0-20260311081108-4f5f75d74cce/go.mod h1:jLgRosADinr2GHmAzrQewdilZX+5x8MYsF0olFtFz5I=
-github.com/fibrchat/worker v0.0.0-20260311083826-674ccee019b5 h1:349POYhyej6BVMnAcT2Sm33RukEk5oa0LIA6Z4RzQZQ=
-github.com/fibrchat/worker v0.0.0-20260311083826-674ccee019b5/go.mod h1:jLgRosADinr2GHmAzrQewdilZX+5x8MYsF0olFtFz5I=
-github.com/fibrchat/worker v0.0.0-20260311084842-76ed218ea4ef h1:7rhWYsHiP/CWQG76UXkFz3zLdMmZry9m5cMnopjf594=
-github.com/fibrchat/worker v0.0.0-20260311084842-76ed218ea4ef/go.mod h1:jLgRosADinr2GHmAzrQewdilZX+5x8MYsF0olFtFz5I=
+github.com/fibrchat/server v0.0.0-20260311110959-29bec193ae6e h1:W9JKGPLck6txgwUulQtRkRFrWRlpmUuQlvDX5PDnxF8=
+github.com/fibrchat/server v0.0.0-20260311110959-29bec193ae6e/go.mod h1:qvgD1BxJy4V7CKvudO8WbBktRBe5aXuzdaqz02DGRjQ=
+github.com/fibrchat/worker v0.0.0-20260311110947-8d4fe3df8c89 h1:1phcl0vYcktDmd9iZ/LC1huxf+T+56ZQ7OSpd4wkILA=
+github.com/fibrchat/worker v0.0.0-20260311110947-8d4fe3df8c89/go.mod h1:jLgRosADinr2GHmAzrQewdilZX+5x8MYsF0olFtFz5I=
 github.com/google/go-tpm v0.9.8 h1:slArAR9Ft+1ybZu0lBwpSmpwhRXaa85hWtMinMyRAWo=
 github.com/google/go-tpm v0.9.8/go.mod h1:h9jEsEECg7gtLis0upRBQU+GhYVH6jMjrFxI8u6bVUY=
 github.com/klauspost/compress v1.18.4 h1:RPhnKRAQ4Fh8zU2FY/6ZFDwTVTxgJ/EMydqSTzE9a2c=
