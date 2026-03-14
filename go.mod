@@ -3,8 +3,8 @@ module github.com/fibrchat/standalone
 go 1.25.5
 
 require (
-	github.com/fibrchat/server v0.0.0-20260311110959-29bec193ae6e
-	github.com/fibrchat/worker v0.0.0-20260311110947-8d4fe3df8c89
+	github.com/fibrchat/server v0.0.0-20260314073510-562d9cfd77ad
+	github.com/fibrchat/worker v0.0.0-20260314073818-e8e5a55b8c16
 )
 
 require (

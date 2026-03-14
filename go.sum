@@ -2,8 +2,12 @@ github.com/antithesishq/antithesis-sdk-go v0.6.0 h1:v/YViLhFYkZOEEof4AXjD5AgGnGM
 github.com/antithesishq/antithesis-sdk-go v0.6.0/go.mod h1:IUpT2DPAKh6i/YhSbt6Gl3v2yvUZjmKncl7U91fup7E=
 github.com/fibrchat/server v0.0.0-20260311110959-29bec193ae6e h1:W9JKGPLck6txgwUulQtRkRFrWRlpmUuQlvDX5PDnxF8=
 github.com/fibrchat/server v0.0.0-20260311110959-29bec193ae6e/go.mod h1:qvgD1BxJy4V7CKvudO8WbBktRBe5aXuzdaqz02DGRjQ=
+github.com/fibrchat/server v0.0.0-20260314073510-562d9cfd77ad h1:Sdz0D9tdMIAlIA1wg4x+GzRn9JlrRGUAZFnVk/Paj0k=
+github.com/fibrchat/server v0.0.0-20260314073510-562d9cfd77ad/go.mod h1:qvgD1BxJy4V7CKvudO8WbBktRBe5aXuzdaqz02DGRjQ=
 github.com/fibrchat/worker v0.0.0-20260311110947-8d4fe3df8c89 h1:1phcl0vYcktDmd9iZ/LC1huxf+T+56ZQ7OSpd4wkILA=
 github.com/fibrchat/worker v0.0.0-20260311110947-8d4fe3df8c89/go.mod h1:jLgRosADinr2GHmAzrQewdilZX+5x8MYsF0olFtFz5I=
+github.com/fibrchat/worker v0.0.0-20260314073818-e8e5a55b8c16 h1:WOL2nrgy5fiTG6vhJ5/j5O+Hunb5Z4FSjapG+BE88d8=
+github.com/fibrchat/worker v0.0.0-20260314073818-e8e5a55b8c16/go.mod h1:jLjOI4YeordRSF5wCAFCXqnMj2cjY6T9TXWfzPDZTIo=
 github.com/google/go-tpm v0.9.8 h1:slArAR9Ft+1ybZu0lBwpSmpwhRXaa85hWtMinMyRAWo=
 github.com/google/go-tpm v0.9.8/go.mod h1:h9jEsEECg7gtLis0upRBQU+GhYVH6jMjrFxI8u6bVUY=
 github.com/klauspost/compress v1.18.4 h1:RPhnKRAQ4Fh8zU2FY/6ZFDwTVTxgJ/EMydqSTzE9a2c=

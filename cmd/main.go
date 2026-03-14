@@ -17,14 +17,12 @@ import (
 func main() {
 	port := envInt("PORT", 4222)
 	domain := envOr("DOMAIN", "localhost")
-	remotePassword := envOr("REMOTE_PASSWORD", "remote")
 	workerPassword := randomPassword()
 
 	srv, err := server.Start(server.Options{
 		Domain:         domain,
 		Port:           port,
 		WorkerPassword: workerPassword,
-		RemotePassword: remotePassword,
 	})
 	if err != nil {
 		log.Fatalf("Failed to start server: %v", err)
@@ -33,7 +31,6 @@ func main() {
 	wrk, err := worker.Start(worker.Options{
 		Domain:          domain,
 		WorkerPassword:  workerPassword,
-		RemotePassword:  remotePassword,
 		InProcessServer: srv,
 	})
 	if err != nil {
@@ -47,7 +44,7 @@ func main() {
 	<-sig
 	fmt.Println("\nShutting down...")
 
-	wrk.Shutdown()
+	wrk.Stop()
 	srv.Stop()
 }
 
