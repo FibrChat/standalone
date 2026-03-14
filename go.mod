@@ -4,7 +4,7 @@ go 1.25.5
 
 require (
 	github.com/fibrchat/server v0.0.0-20260314141913-3402eb787384
-	github.com/fibrchat/worker v0.0.0-20260314141952-61b252113996
+	github.com/fibrchat/worker v0.0.0-20260314162045-690a3963ce69
 )
 
 require (
